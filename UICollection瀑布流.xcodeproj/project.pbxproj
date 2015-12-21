@@ -13,6 +13,8 @@
 		3481C23A1C26C423006CCC4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3481C2381C26C423006CCC4B /* Main.storyboard */; };
 		3481C23C1C26C423006CCC4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3481C23B1C26C423006CCC4B /* Assets.xcassets */; };
 		3481C23F1C26C423006CCC4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3481C23D1C26C423006CCC4B /* LaunchScreen.storyboard */; };
+		34C55F4D1C2836380001EF15 /* JRLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C55F4C1C2836380001EF15 /* JRLayout.m */; };
+		34C55F731C285C140001EF15 /* WJY_WaterFallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C55F721C285C140001EF15 /* WJY_WaterFallLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		3481C23B1C26C423006CCC4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3481C23E1C26C423006CCC4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3481C2401C26C423006CCC4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34C55F4B1C2836380001EF15 /* JRLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRLayout.h; sourceTree = "<group>"; };
+		34C55F4C1C2836380001EF15 /* JRLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRLayout.m; sourceTree = "<group>"; };
+		34C55F711C285C140001EF15 /* WJY_WaterFallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJY_WaterFallLayout.h; sourceTree = "<group>"; };
+		34C55F721C285C140001EF15 /* WJY_WaterFallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJY_WaterFallLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +64,14 @@
 		3481C22E1C26C423006CCC4B /* UICollection瀑布流 */ = {
 			isa = PBXGroup;
 			children = (
+				34C55F711C285C140001EF15 /* WJY_WaterFallLayout.h */,
+				34C55F721C285C140001EF15 /* WJY_WaterFallLayout.m */,
 				3481C2321C26C423006CCC4B /* AppDelegate.h */,
 				3481C2331C26C423006CCC4B /* AppDelegate.m */,
 				3481C2351C26C423006CCC4B /* ViewController.h */,
 				3481C2361C26C423006CCC4B /* ViewController.m */,
-				3481C2381C26C423006CCC4B /* Main.storyboard */,
-				3481C23B1C26C423006CCC4B /* Assets.xcassets */,
-				3481C23D1C26C423006CCC4B /* LaunchScreen.storyboard */,
-				3481C2401C26C423006CCC4B /* Info.plist */,
+				34C55F4B1C2836380001EF15 /* JRLayout.h */,
+				34C55F4C1C2836380001EF15 /* JRLayout.m */,
 				3481C22F1C26C423006CCC4B /* Supporting Files */,
 			);
 			path = "UICollection瀑布流";
@@ -74,6 +80,10 @@
 		3481C22F1C26C423006CCC4B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3481C2381C26C423006CCC4B /* Main.storyboard */,
+				3481C23B1C26C423006CCC4B /* Assets.xcassets */,
+				3481C23D1C26C423006CCC4B /* LaunchScreen.storyboard */,
+				3481C2401C26C423006CCC4B /* Info.plist */,
 				3481C2301C26C423006CCC4B /* main.m */,
 			);
 			name = "Supporting Files";
@@ -149,9 +159,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34C55F731C285C140001EF15 /* WJY_WaterFallLayout.m in Sources */,
 				3481C2371C26C423006CCC4B /* ViewController.m in Sources */,
 				3481C2341C26C423006CCC4B /* AppDelegate.m in Sources */,
 				3481C2311C26C423006CCC4B /* main.m in Sources */,
+				34C55F4D1C2836380001EF15 /* JRLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +312,7 @@
 				3481C2451C26C423006CCC4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
