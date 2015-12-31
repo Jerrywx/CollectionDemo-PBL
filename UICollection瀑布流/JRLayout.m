@@ -10,13 +10,13 @@
 
 @interface JRLayout ()
 @property (nonatomic, assign) CGFloat				itemWidth;		// Item Width (所有 Item 宽度一致)
-@property (nonatomic, strong) NSMutableArray		*itemXs;		// Item X (每行的 Item X 一致)
-@property (nonatomic, strong) NSMutableArray		*itemYs;		// Item Y (每个 Item Y 都不同)
-@property (nonatomic, strong) NSMutableArray		*itemHs;		// Item Height (每个Item H 都不相同)
-@property (nonatomic, strong) NSMutableArray		*itemFrames;	// Item Frame
-@property (nonatomic, assign) CGFloat				collectionH;	// 高度
+@property (nonatomic, strong) NSMutableArray			*itemXs;		// Item X (每行的 Item X 一致)
+@property (nonatomic, strong) NSMutableArray			*itemYs;		// Item Y (每个 Item Y 都不同)
+@property (nonatomic, strong) NSMutableArray			*itemHs;		// Item Height (每个Item H 都不相同)
+@property (nonatomic, strong) NSMutableArray			*itemFrames;		// Item Frame
+@property (nonatomic, assign) CGFloat				collectionH;		// 高度
 
-@property (nonatomic, strong) NSMutableArray		*lowerH;		//
+@property (nonatomic, strong) NSMutableArray			*lowerH;		//
 @end
 
 @implementation JRLayout
