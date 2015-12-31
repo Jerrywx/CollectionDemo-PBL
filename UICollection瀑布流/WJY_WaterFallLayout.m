@@ -21,13 +21,9 @@
 #pragma mark - 重写，应 始终调用子类
 #warning 调用一   刷新collectionView 时调用一次
 - (void)prepareLayout {
-	NSLog(@"-- %s %zd ------ %zd", __FUNCTION__, __LINE__, [self.collectionView numberOfItemsInSection:0]);
     // 如果item 是0 返回
     NSInteger cellCount = [self.collectionView numberOfItemsInSection:0];
 	if (cellCount == 0) return;
-	
-	NSLog(@"======================================================================");
-	
     // 调转系统的协议方法 并设置代理
     self.delegate				= (id<WaterLayoutDelegate>)self.collectionView.delegate;
     self.itemsArrange			= [NSMutableDictionary dictionary];
@@ -94,8 +90,7 @@
 - (CGSize)collectionViewContentSize {
 	
     CGFloat heightest	= [self getHeightest:self.heights];
-    CGSize size			= CGSizeMake(0, heightest);
-	NSLog(@"-- %s %zd=%@", __FUNCTION__, __LINE__, NSStringFromCGSize(size));
+    CGSize size		= CGSizeMake(0, heightest);
     return size;
 }
 
@@ -119,7 +114,7 @@
 
 #pragma mark - 重新自定义layout
 - (UICollectionViewLayoutAttributes *)initialLayoutAttributesForAppearingItemAtIndexPath:(NSIndexPath *)itemIndexPath {
-	NSLog(@"-- %s %zd", __FUNCTION__, __LINE__);
+
     // layout初始化方法
     UICollectionViewLayoutAttributes *attributes = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:itemIndexPath];
     NSArray *keyArr = self.itemsArrange.allKeys;
@@ -138,8 +133,7 @@
 #pragma mark - 布局属性返回数组 视图在给定矩形
 #warning 调用三   返回 layout 数组
 - (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect {
-    NSLog(@"-- %s %zd === %@", __FUNCTION__, __LINE__, NSStringFromCGRect(rect));
-	
+   
     CGFloat up = rect.origin.y;
     CGFloat down = rect.origin.y + rect.size.height;
     NSMutableArray *attributes = [NSMutableArray array];
@@ -188,7 +182,6 @@
         // 如果heightest为最高点返回返回 如果不是则返回height
         heightest  = heightest > [height[i] doubleValue] ? heightest : [height[i] doubleValue];
     }
-	NSLog(@"===================================== %f", heightest);
     return heightest;
 }
 
