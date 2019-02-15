@@ -16,6 +16,8 @@ git clone https://git.ffmpeg.org/ffmpeg.git
 
 ###### 3. 编译
 
+https://www.cnblogs.com/blackhumour2018/p/9400415.html
+
 生成FFmpeg编译脚本
 ```
 ./configure --prefix=/usr/local/ffmpeg --enable-gpl --enable-nonfree --enable-libfdk-aac --enable-libx264 --enable-libx265 --enable-filter=delogo --enable-debug --disable-optimizations --enable-opengl --enable-libspeex --enable-libopus --enable-libmp3lame --enable-videotoolbox --enable-shared --enable-pthreads --enable-version3 --enable-hardcoded-tables --cc=clang --host-cflags= --host-ldflags=
